@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2>MatsterFrontEnd [:)</h2>
+
+<script>
+  window.addEventListener('load', function() {
+  // Проверка поддержки вибрации
+  if (navigator.vibrate) {
+    // Добавляем задержку, чтобы вибрация сработала на мобильных устройствах
+    setTimeout(function() {
+      navigator.vibrate(200); // Вибрация на 200 миллисекунд
+    }, 1000); // Задержка 1 секунда после загрузки страницы
+  } else {
+    console.log("Вибрация не поддерживается этим устройством.");
+  }
+});
+
+  </script>
+  
+</body>
+</html>
